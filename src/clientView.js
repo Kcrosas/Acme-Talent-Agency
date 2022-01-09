@@ -8,7 +8,15 @@ class _clientView extends Component {
   }
 
   render() {
-    return <div>Goodbye World</div>;
+    console.log(this.props);
+    if (!this.props.clients) {
+      return null;
+    }
+    let id = window.location.hash.slice(-1) * 1;
+    const { clients } = this.props;
+    let specific = clients.filter((e) => e.id === id);
+    console.log(specific[0].name);
+    return <div>Hello</div>;
   }
 }
 

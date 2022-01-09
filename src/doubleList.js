@@ -43,7 +43,6 @@ class _doubleList extends Component {
 
               {clientReduced.map((d) => {
                 const splitNameID = d[0].split("|");
-                console.log(splitNameID);
                 return (
                   <tr>
                     <td>

@@ -16,7 +16,6 @@ class _App extends Component {
     this.props.load();
   }
   render() {
-    console.log(this.props);
     return (
       <div>
         <h1>Acme Talent Agency</h1>
